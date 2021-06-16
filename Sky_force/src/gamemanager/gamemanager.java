@@ -28,7 +28,7 @@ public class gamemanager {
 		bullet=new ArrayList<Bullet>();
 		enemies=new ArrayList<Enemy>();
 		current=System.nanoTime();
-		delay=200;
+		delay=100;
 		health=Player.geth();
 		score=0;
 		if(score>100)
@@ -48,8 +48,8 @@ public class gamemanager {
 		if(breaks>delay) {
 		for(int i=0;i<2;i++) {
 			Random rand=new Random();
-			int randX=rand.nextInt(500);
-			int randY=rand.nextInt(600);
+			int randX=rand.nextInt(1000);
+			int randY=rand.nextInt(1000);
 			if(health>0) {
 			enemies.add(new Enemy(randX,-randY));
 			

@@ -45,7 +45,7 @@ public  class player implements KeyListener {
 		}
 		}
 		if(right) {
-			if(x<518) {
+			if(x<508) {
 			x+=1;
 		}
 			
