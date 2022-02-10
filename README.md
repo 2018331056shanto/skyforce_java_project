@@ -1,11 +1,11 @@
 Question Setter
 ---------------
-Name:  __Sadik Al Barid__         
-Registration # __2019331046__            
-Session: *2019-2020*            
-GitHub Username: *Tard1grad3*               
-Cell: *01797613318*              
-Email: *sadik46@student.sust.edu*         
+Name:  __Al Fahad Mollah__         
+Registration # __2018331075__            
+Session: *2018-2019*            
+GitHub Username: *isolated77*               
+Cell: *01311721959*              
+Email: *iamfahad105@gmail.com*         
 
 Question Set with Answers
 =========================
@@ -29,544 +29,635 @@ Question Set with Answers
 <div style="text-align:left">1. Answer the following Questions in short. (Any <b>Five</b>).</div>
 <div align="right">5 &times; 2 = 10 </div>
 
-(a) If y=20, what are the values of x after these operations:
-(i)     x=y==y--
-(ii)    x=5*y++
+(a) What is the difference between the functions fabs() and abs()? 
 
 **Answer:** <br>
-i)	y-- gives y==19 which is false (20 != 19). So, x=0 is assigned; <br>
-ii)	y++ makes the value of y 20 again. So, x=5*20=105.
 
-(b) Write down the output of the pseudo-code: <br>
-```cpp
-int x; x = long ('x'); printf ("%c", x--);
-```
+ Both functions are use to return absotlute value but fabs() use for floating type numbers and abs() is use for integer type numbers.
+ Prototype of abs() is under the library header 
+ ```cpp
+ < stdlib.h >
+ ```
+
+  and
+  ```cpp
+   fabs() 
+  ```
+   is under 
+   ```cpp
+   < math.h >
+
+   ```
+   .
+
+(b) What is the header file of `tolower()` function?   <br>
+
 
 **Answer:** <br>
-*Output:* `x`
->As, %c is the format specifier for character and x-- will decrement after printing
 
-( c) What is the difference between #ifdef and #ifndef?
+```C
+ ctype.h
+
+ ```
+
+( c) What is identifier in C language ?
 
 **Answer:**
-```cpp
-#ifdef myCondition
-    // this part of the code is excluded before the compiler even sees it
-    // if myCondition is not defined (via #define)
-#endif
+```
+In C language, an identifier is a combination of alphanumeric characters, i.e. first begin with a letter of the alphabet or an underline, and the remaining are letter of an alphabet, any numeric digit, or the underline.And Identifiers must be unique
 
-#ifndef myCondition
-    // this part of the code is excluded before the compiler even sees it
-    // if myCondition is defined (via #define)
-#endif
+For example,
+   int student;
+   float marks;
+
 ```
 
-(d) What is the output of the pseudo-code given below?
-```cpp
-int a = 48, *b = &a;
-printf ("%x\n%c", *b, *b);
-```
-**Answer:** <br>
-```
-Output: 30
-        0
-```
->%x is the format specifier for hex and %c is the format specifier for character
-
-(e) Look at the pseudo-code written below:
-```cpp
-  int mom = 42, wow = mom & (1 << 1);
-  wow? printf ("My MOM is WOW"):
-       printf ("My MOM is still WOW");
-```
-What is the value of wow and what is the output?
-
-**Answer:** Value of wow is 2. <br>
-*output:* `My MOM is WOW`
-
-(f) What is structure in C programming language? Create a structure which can be used to represent a complex number.
-
-**Answer:** A struct (or structure) is a collection of variables under a single name.
-```cpp
-struct complex {
- float imag;
- float real;
-};
-```
-
-(g) What will be the output of the pseudo-code?
-```cpp
-char s[20], ss[20];
-    	scanf ("%[OH My]", s);
-   	getchar ();
-    	scanf("%[^\n]", ss);
-    	printf ("%s %s", s, ss);
-```
-*Input:*
-```
-My MOM
-is WOW
-isn't She?
-```
+(d) What does scanf() function return?
 
 **Answer:** <br>
-*Output:* `My MOM is WOW.`
-
-(h) What is a double pointer\ pointer to pointer \ pointer on pointer in C? Give an example.
-
-**Answer:** It’s a pointer variable which can hold the address of another pointer variable. <br>
-*Eg:*
-```cpp
-int x = 5, *p=&x, **q=&p;
 ```
->‘x’ can be accessed by **q.
+The scanf() function returns the number of fields that were successfully converted and assigned. The return value does not include fields that were read but not assigned.
+```
+
+(e) What is the difference between scanf and getchar?
+
+**Answer:** The main difference between scanf and getchar is that scanf function helps to read input from the keyboard and to store them according to the given format specifier while getchar reads a single character from the keyboard. 
+
+
+(f) What is merge sort?
+**Answer:** 
+```
+Merge sort, is a  divide-and-conquer approach for sorting the data. In a sequence of data, adjacent ones are merged and sorted to create bigger sorted lists. 
+ These sorted lists are then merged again to form an even bigger sorted list, which continues until you have one single sorted list.
+ ```
+
+(g) what are multidimentional arrays?
+
+**Answer:** <br>
+```
+ Multidimensional arrays make use of multiple indexes to store data.It is useful when storing data that cannot be represented using single dimensional indexing, such as data representation in a board game, tables with data stored in more than one column.
+ ```
+
+(h) Why C called a structured programming language?
+
+**Answer:** 
+ 
+ C is called a structured programming language because to solve a large problem, C programming language divides the problem into smaller modules called functions or procedures each of which handles a particular responsibility. 
+ The program which solves the entire problem is a collection of such functions
+    
+<br>
 
 <div align="left">2. Answer the following Questions. (Any <b>Four</b>).</div>
 <div align="right">4 &times; 5 = 20 </div>
 
-(a) What is a bitfield? What will be the output of the following C program?
+(a) Why loop in Programming ? What is the difference between while loop and for loop and which is better?
+ 
+**Answer:** 
+```
+ Almost all the programming languages provide a concept called loop, which helps in executing one or more statements up to a desired number of times.
+ All high-level programming languages provide various forms of loops, which can be used to execute one or more statements repeatedly.
+ The difference between for loop and while loop is that in for loop the number of iterations to be done is already known and is used to obtain a certain result 
+ whereas in while loop the command runs until a certain condition is reached and the statement is proved to be false.
+ In general, you should use a for loop when you know how many times the loop should run. If you want the loop to break based on a condition other than the number of times it runs, 
+ you should use a while loop.
+ ```
+ <br>
+
+
+(b) Write a program to find out the LCM of two positive integer a and b using GCD and find GCD using recursion.
+ 
+
+**Answer:**<br>
 ```cpp
 #include<stdio.h>
-int main ()
-{
-	struct fun
-	{
-		int a: 2;
-		int b: 4;
-		int c: 4;
-		int d: 3;
-	} field = {2, 3, 8, 7};
-	printf("%d %d %d %d", field.a, field.b, field.c, field.d);
+   int hcf(int n1, int n2);
+int main() {
+    int n1, n2;
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &n1, &n2);
+	int gcd=hcf(n1,n2);
+	int lcm=(n1*n2)/gcd;
+	
+    printf("L.C.M of %d and %d is %d.", n1, n2, lcm);
+    return 0;
 }
-```
 
-**Answer:** In C, we can specify size (in bits) of structure and union members. It is called a bitfield. <br>
-*Output:* `-2 3 -8 -1.`
->Because, the left most bit is needed for +/- sign.
-
-(b) Write a function to generate all the possible subsets of a set of size n **(n<=20)** using bit-masking.
-
-**Answer:**<br>
-```cpp
-void subsets(char arr[], int n)
-{
-  for (i = 0; i < (1<<n); i++)
-  {
-    for(int j = 0; j < n; j++)
-      if(i & (1<<j))
-        printf("%c ", arr[j]);
-    puts("");
-  }
-}
-```
-
-( c) Write a recursive function to find the value of **nCr**. **(1 <= n <= 25, 0 <= r <= n)**
-
-**Answer:**<br>
-```cpp
-int nCr (int n, int r)
-{
-    if (r == 0 | r == n)
-        return 1;
+int hcf(int n1, int n2) {
+    if (n2 != 0)
+        return hcf(n2, n1 % n2);
     else
-        return nCr (n - 1, r - 1) + nCr (n - 1, r);
+        return n1;
 }
+ 
 ```
 
-(d) Divide the numbers from **1** to **n** **(1 <= n <= 10<sup>6</sup>)** into two sets of equal sums. Print **YES**, if it is possible, and **NO** if not possible. If the division is possible, first, print the number of elements of the first set and the elements in a new line. Then, print the second set similarly.
+( c)Write a Program to print following pattern:
+Examples : 
 
+Input :` 5 `
+Output: 
+```
+ * * * * *  * * * * *
+ * * * *      * * * *
+ * * *          * * *
+ * *              * *
+ *                  *
+ *                  *
+ * *              * *
+ * * *          * * *
+ * * * *      * * * *
+ * * * * *  * * * * *
+ ```
 **Answer:**<br>
 ```cpp
-#include <stdio.h>
-#define f(i, a, b) for(int i=a; i<b; i++)
-#define ll long long
+#include<stdio.h>
+void pattern(int n)
+{
+	int i,j;
 
+	for (i=1; i<=n; i++)
+	{
+		for (j=1; j<=(2*n); j++)
+		{
+			if (i>(n-j+1))
+				printf(" ");
+			else
+				printf("*");
+				
+			if ((i+n)>j)
+				printf(" ");
+			else
+				printf("*");
+		}
+		printf("\n");
+	}
+	
+	for (i=1; i<=n; i++)
+	{
+		for (j=1; j<=(2*n); j++)
+		{
+			if (i<j)
+				printf(" ");
+			else
+				printf("*");
+			
+			if (i<=((2*n)-j))
+				printf(" ");
+			else
+			
+				printf("*");
+		}
+		printf("\n");
+	}
+}
 
 int main()
 {
-    int n;
-    scanf ("%d", &n);
-    if (n == 1 || n == 2) puts ("NO");
-    else if (! ( (n / 2) & 1) && n % 4 != 1)
-    {
-        puts ("YES");
-        printf ("%d\n", n / 2);
-        f (i, 1, n + 1)
-          if (i % 4 == 1 || ! (i % 4)) printf ("%d ", i);
-        puts ("");
-        printf ("%d\n", n / 2);
-        f (i, 1, n + 1)
-          if (i % 4 == 2 || i % 4 == 3) printf ("%d ", i);
-    }
-    else if (! ( ( (n - 3) / 2) & 1))
-    {
-        puts ("YES");
-        printf ("%d\n", n - (n / 2));
-        printf ("1 2 ");
-        f (i, 4, n + 1)
-          if (i % 4 == 3 || ! (i % 4)) printf ("%d ", i);
-        puts ("");
-        printf ("%d\n", n / 2);
-        printf ("3 ");
-        f (i, 4, n + 1)
-          if (i % 4 == 1 || i % 4 == 2) printf ("%d ", i);
-    }
-    else puts ("NO");
-    return 0;
+	pattern(5);
+	return 0;
 }
 ```
 
-(e) Sort an array using Quick sort algorithm in ascending order.
 
-**Answer:** <br>
-```cpp
-#include <stdio.h>
 
-static inline
-void swap(int *a, int *b)
-{
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
+(d)Differentiate between a constant pointer and pointer to a constant? 
 
-static
-int partition(int *L, int left, int right)
-{
-    int pivot = left;
-    int p_val = L[pivot];
+**Answer:**<br>
+```Constant pointer:
+A constant pointer is a pointer whose value (pointed address) is not modifiable. If you will try to modify the pointer value, you will get the compiler error.
 
-    while (left < right)
-    {
-        while (L[left] <= p_val)
-            left++;
-        while (L[right] > p_val)
-            right--;
-        if (left < right)
-            swap(&L[left], &L[right]);
-    }
-    swap(&L[pivot], &L[right]);
-    return right;
-}
+A constant pointer is declared as follows :
 
-static
-void qSort(int *L, int start, int end)
-{
-    if (start >= end)
-        return;
-    int splitPoint = partition(L, start, end);
-    qSort(L, start, splitPoint - 1);
-    qSort(L, splitPoint + 1, end);
-}
-
-static void print_array(int *ptr, int left, int right)
-{
-    for (int i = left; i <= right; i++)
-        printf("%3d ", ptr[i]);
-    puts("");
-}
-
-int main(void)
-{
-    int arr[] = {12, 43, -16, 0, 2, 5, 1, 13, 2, 2, -1};
-    qSort(arr, 0, 9);
-    puts("Sorted Array:");
-    print_array(arr, 0, 9);
-}
+Data_Type * const Pointer_Name;
+*eg,
+int *const ptr; //constant pointer to integer
+Pointer to a constant:
+In this scenario the value of the pointed address is constant that means we can not change the value of the address that is pointed by the pointer.
+A constant pointer is declared as follows :
+Data_Type  const*  Pointer_Name;
+eg,
+int const *ptr// pointer to const integer
 ```
 
-(f) Look at the code given below. Is there any mistake which will cause compilation error? If yes, then correct it and print the output.
-```cpp
-#include <stdio.h>
-#define sust 20 * 5 + 100
+(e) What do you mean by enumeration in C?
 
-int main()
-{
-    int *n, m = 10;
-    int m += sust;
-    n = &sust;
-    printf ("%d", * (--n) *m);
-    return 0;
-}
-
+**Answer:** 
+```
+Enumeration is a user defined datatype in C language. It is used to assign names to the integral constants which makes a program easy to read and maintain.
+The keyword “enum” is used to declare an enumeration.
+Basically, we used the enum to increase the code readability and with enum easy to debug the code as compared to symbolic constant (macro).
+The most important property of enum is that it follows the scope rule and the compiler automatically assigns the value to its member constant. 
 ```
 
-**Answer:** Here **int m += sust** will produce error because m was already declared in the previous line. Again, **n = &sust** will cause a compilation error. First, the value of sust needs to be stored in another variable then it can be assigned to n. The corrected code:
-```cpp
-#include <stdio.h>
-#define sust 20 * 5 + 100
+(f) what is linked list? what is data abstraction?
 
-int main()
-{
-    int *n, m = 10, a = sust;
-    m += sust;
-    n = &a;
-    printf ("%d", * (--n) *m);
-    return 0;
-}
+
+**Answer:** 
 ```
-*Output:* Any garbage value. Because **(--n)** is decrementing the address. So, the output can be any garbage value.
+Linked-list:
+A linked list is a sequence of nodes in which each node is connected to the node following it. This forms a chain-like link for data storage.
+Data abstraction :
+Data abstraction is a powerful tool for breaking down complex data problems into manageable chunks. This is applied by initially specifying
+the data objects involved and the operations to be performed on these data objects without being overly concerned with how the data objects will 
+be represented and stored in memory.
+```
 
 
 <div align="left">3. Answer the following Questions. (Any <b>Two</b>).</div>
 <div align="right">2 &times; 10 = 20 </div>
 
 
-(a) Write an efficient program to find out the sum of the following sequence for a given input **n**: 2<sup>2</sup>, 3<sup>2</sup>,5,<sup>2</sup>,7<sup>2</sup>,11<sup>2</sup>……till n. **(n<=10<sup>8</sup>)**
->Hint: Use Sieve of Eratosthenes.
+(a) Descrive File Handling Functions in C?
 
 **Answer:** <br>
-```cpp
-#include <stdio.h>
-#include <math.h>
-#include <stdbool.h>
-#define sz 100000000
+```
+The following are the operations performed on files in the c programming language
+  a)Creating (or) Opening a file
+  b)Reading data from a file
+  c)Writing data into a file
+  d)Closing a file.
+  
+  Creating (or) Opening a file:
+  
+  We use the pre-defined method fopen() to create a new file or to open an existing file. In C programming language, there different modes are available to open a file.They are given below-
+    1)r	 Opens a text file in reading mode.
+	2)w	 Opens a text file in wirting mode.
+	3)a	 Opens a text file in append mode.
+	4)r+ Opens a text file in both reading and writing mode.
+	5)w+ Opens a text file in both reading and writing mode. It set the cursor position to the begining of the file if it exists.
+	6)a+ Opens a text file in both reading and writing mode. The reading operation is performed from begining and writing operation is performed at the end of the file.
+	
+  Reading from a file:
 
-int  prime[sz], cnt;
-bool siv[sz];
+  The reading from a file operation is performed using the following pre-defined file handling methods.
+    1)getc()
+    2)getw()
+    3)fscanf()
+    4)fgets()
+    5)fread().
+	
+  Writing into a file:
 
-void sieve (int n)
-{
-    long long i, j;
-    for (i = 3; i * i <= sz; i += 2)
-        if (!siv[i])
-            for (j = i * i; j <= n; j += i + i)
-                siv[j] = 1;
-    prime[cnt++] = 2;
-    for (i = 3; i <= n; i += 2)
-        if (!siv[i])
-            prime[cnt++] = i;
-}
-int main()
-{
-    int n, i;
-    long long ans = 0;
-    scanf ("%d", &n);
-    sieve (n);
-    for (i = 0; i < cnt && prime[i] <= n; i++) ans += prime[i] * prime[i];
-    printf ("%I64d\n", ans);
-}
+  The writing into a file operation is performed using the following pre-defined file handling methods.
+   1)putc()
+   2)putw()
+   3)fprintf()
+   4)fputs()
+   5)fwrite().
+   
+  Closing a file:
+
+   Closing a file is performed using a pre-defined method fclose().The method fclose() returns '0'on success of file close otherwise it returns EOF (End Of File).
 ```
 
-(b) You are given a weighed undirected graph with **n** nodes and **m** edges and two integers **a** and **b**.  You have to answer **q** independent queries.
-
-**Input:** The first line contains three integer **n**, **m** and **q** **(0<=n,m,q<=100)**. Number of nodes, edges and queries respectively.<br>
-Next **m** lines contain three integers **x,y,z** each where **z** denotes the weight between the path from **x** to **y**.<br>
-Next **q** lines contain two integers **a** and **b** **(0<=a,b<=n)** each.
-
-**Output:** Print the shortest path cost. If there is no path between the nodes, print ‘No Path’. If a and b are the same node, print ‘You Are Already in The Destination’.
+(b)Write a suducode for Tower of hanoi problem then implement it using recursion.
 
 **Answer:** <br>
+```
+ Suducode for tower of hanoi:-
+   
+                              FUNCTION MoveTower(disk, source, dest, spare):
+  IF disk == 0, THEN:
+    move disk from source to dest
+  ELSE:
+    MoveTower(disk - 1, source, spare, dest)   // Step 1 above
+    move disk from source to dest              // Step 2 above
+    MoveTower(disk - 1, spare, dest, source)   // Step 3 above
+  END IF
+```
+<br>
+  C implementation for tower of hanoi:-
+  <br>
+
 ```cpp
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#define ll long long
-#define sz 100
-#define inf 999999999999999
 
-ll adj[sz][sz];
-
-int main()
-{
-    ll i, n, m, x, y, z, j, k, q, a, b;
-    scanf ("%lld%lld%lld", &n, &m, &q);
-    for (i = 0; i < n; i++)
-        for (j = 0; j < n; j++)
-        {
-            if (i == j) adj[i][j] = 0;
-            else adj[i][j] = inf;
-        }
-    for (i = 0; i < m; i++)
-    {
-        scanf ("%lld%lld%lld", &x, &y, &z);
-        adj[x][y] = z, adj[y][x] = z;
-    }
-    for (i = 0; i < n; i++)
-        for (j = 0; j < n; j++)
-            for (k = 0; k < n; k++)
-                if (adj[j][k] > (adj[j][i] + adj[i][k]))
-                    adj[j][k] = adj[j][i] + adj[i][k];
-    for (i = 0; i < q; i++)
-    {
-        scanf ("%lld%lld", &a, &b);
-        if (adj[a][b] == inf)
-            printf ("No Path\n");
-        else if (adj[a][b] == 0)
-            printf ("You Are Already in The Destination\n");
-        else
-            printf ("Shortest Path Cost: %lld\n", adj[a][b]);
-    }
+ void towers(int, char, char, char); 
+ int main()
+  {
+    int num;
+ 
+    printf("Enter the number of disks : ");
+    scanf("%d", &num);
+    printf("The sequence of moves involved in the Tower of Hanoi are :\n");
+    towers(num, 'A', 'C', 'B');
     return 0;
-}
+  }
+   void towers(int num, char frompeg, char topeg, char auxpeg)
+  {
+    if (num == 1)
+    {
+        printf("\n Move disk 1 from peg %c to peg %c", frompeg, topeg);
+        return;
+    }
+    towers(num - 1, frompeg, auxpeg, topeg);
+    printf("\n Move disk %d from peg %c to peg %c", num, frompeg, topeg);
+    towers(num - 1, auxpeg, topeg, frompeg);
+  }
 ```
 
-( c) Write a complete C program using **binary search** which returns an index **i** of a **sorted** array with **no duplicate elements** such that **arr[i]=i**. If there exists no such index return **-1**.
-
+( c)What is the difference between Structure and Union in C Program?Explain in details .
 **Answer:**
-```cpp
-#include <stdio.h>
-
-int bi_Srch (int arr[], int high, int low)
-{
-    if (high >= low)
-    {
-        int mid = (low + high) / 2;
-        if (mid == arr[mid])
-            return mid;
-        else if (mid > arr[mid])
-            return bi_Srch (arr, high, (mid + 1));
-        else
-            return bi_Srch (arr, (mid - 1), low);
-    }
-    return -1;
-}
-
-int main()
-{
-    int arr[10] = {-150, -6, -2, -1, 3, 5, 41, 65, 250};
-    int n = sizeof (arr) / sizeof (arr[0]);
-    printf ("%d", bi_Srch (arr, n - 1, 0));
-    return 0;
-}
 ```
+For storage of data of same type C provides concept of Array which stores data variables of same
+  type while for storing data of different type C has concept of structure and union that can store
+  data variable of different type as well.Both Structure and Union can hold different type of data 
+  in them but now on the basis of internal implementation we can find several differences in both of
+  these containers.
+```
+<br>
+Differences between Structure and Union are given below:<br>
 
+```
+  1)Structure is the container defined in C to store data variables of different type and also supports
+   for the user defined variables storage. On other hand Union is also similar kind of container in C
+   which can also holds the different type of variables along with the user defined variables.
+  2)Structure in C is internally implemented as that there is separate memory location is allotted to
+   each input member. While in case Union memory is allocated only to one member having largest size 
+   among all other input variables and the same location is being get shared among all of these.
+  3)Structure do not have shared location for its members so size of Structure is equal or greater 
+   than the sum of size of all the data members.On other hand Union does not have separate location 
+   for each of its member so its size or equal to the size of largest member among all data members.
+  4)In Structure multiple members can be can be initializing at same time.On other hand in case of
+    Union only the first member can get initialize at a time.
+  5)Syntax of declare a Structure in C is as follow :
+    struct struct_name{
+     type element1;
+     type element2;
+    } variable1, variable2;
+	On other syntax of declare a Union in C is as follow:
+    union u_name{
+     type element1;
+     type element2;
+    } variable1, variable2;
+```
 
 <div align="center"><h4>Group B</h4></div>
 <div align="left">1. Answer the following Questions in short. (Any <b>Five</b>).</div>
 <div align="right">5 &times; 2 = 10 </div>
 
 
-(a) What is the difference between abs() and fabs() functions?
+(a) what is a graph?
 
-**Answer:** abs() is used for getting the absolute value of an integer number whereas fabs() is used for floating/double type data.
-abs() is faster than fabs().
+**Answer:** 
+A graph is one type of data structure that contains a set of ordered pairs. These ordered pairs are also referred to as edges or arcs and are used to connect nodes where data can be stored and retrieved.
 
-(b) What is the output of the following pseudo-code?
-```cpp
-int n='0', m=0;
-while(n) n&=n-1, m++;
-printf("%d", m);
-```
+(b)  Describe fmod() function..
+
 **Answer:**<br>
-*Output:* `2`
->It is basically counting the number of set bits in number 48 (ASCII value of 0 character).
 
-( c) What is the output for the following piece of code?
-```cpp
-#include<stdio.h>
-int main()
-{
-	int a = 3;
-	int *b;
-	b = &a;
-	b++;
-	printf("%d ",*b);
-	return 0;
-}
+fmod function takes 2 floating-point number a,b as parameter and count the a mod b and returns a double.  
+`double fmod (double a, double b);`   
+Returns the floating-point remainder of a/b (rounded towards zero):  
+fmod = a - rem * b
+
+(c) Which one of the following is a keyword fr and shortly describe its application?   
+i) **which**   
+ii) **std**      
+iii) **volatile**
+
+**Answer:** 
+iii) volatile   
+By using ``` volatile ``` the program reports the compiler that the value of the variable may change at any time-without any action being implemented by the code the compiler finds nearby.   
+
+
+(d)
+Write could be  the output of this following program:   
+```c
+int a=8;
+printf("%d %d %d\n",++a,a,a++);
+``` 
+**Answer:** 
+`10 10 8`
+(e) What is the difference between empty string and null string?
+
+**Answer:** Empty string has a null character ('\0') at index 0.<br>
+ But null string does not have any character.
+(f) What's the output of this program?
+```c
+int x = 10, y = -10;
+printf("%d", x - (~y) - 1);
+
 ```
-**Answer:** Garbage value. Here b is the pointer variable which holds the address of another variable called a. When b is incremented, the address stored in b is incremented. As a result, some garbage value will be displayed.
+**Answer:** 0
 
-(d) What is NULL pointer? When does a dangling pointer arise?
+(g) What is the difference between 
+```c 
+int (*p) (char *a)
+```
+<br>
 
-**Answer:** NULL is used to indicate that the pointer doesn’t point to a valid location. Dangling pointers arise when an object is deleted or deallocated, without modifying the value of the pointer.
+ and
 
-(e) What will be the output of the following printf function:
-```cpp
- printf("%d\t%d", sizeof(void), sizeof(void *));
+ <br> 
+
+ ```c
+ int *p (char *a)
  ```
-**Answer:** <br>
-*Output:* `1 8`
->sizeof void is 1 and the sizeof void pointer is 4\8 (varies from compiler to compiler).
-
-(f) Will the following pseudo- code print anything? If yes, write the output. If no, explain the reason.
-```cpp
-int i = 0, j = 1, k = 0;
-if(++k, j, i++)
-	printf("%d|%d|%d", i, j, k);
-```
-**Answer:** It will print nothing. In the above program, the if (++k, j, i++) will appears like if (1, 1, 0). As a result, the condition is false. So, it will print nothing.
-
-(g) Write down two uses of circumflex.
 
 **Answer:** <br>
-i) As bitwise X-OR operator. <br>
-ii) To exclude the characters inside [^ABCD…] from a string during user input.
+In the first one p is a pointer to a function that accepts an argument which is a pointer to a character and returns an integer quantity. On the other hand, in the second one p is a function that accepts an argument which is a pointer to character and returns a pointer to an integer quantity.<br>
 
-(h) What is the output of the following pseudo code?
-```cpp
-int i = 010, j = 0x10;
-printf ("%i|%i", i, j);
+(h) What is the difference between 
+```c
+printf()
 ```
-*Output:* `8|16`
->010 represents octal and 0x10 represents hex numbers.
+and
+```c
+ puts() 
+```
+**Answer:** <br>
+The function 
+```c 
+printf()
+```
+ writes the data on standard output device with the ability of formatted string using
+ ```c
+  %c, %d, %s, %20s
+```
+ .. etc and printf does not add new line after displaying text.
+ ```c
+ int printf(const char *format, ...);
+ ```
+ <br>
+
+ ```c
+  puts()
+ ```
+  writes the string on standard output device and add new line after displaying text.
+
+```c
+int puts(const char *s);
+```
 
 <div align="left">2. Answer the following Questions. (Any <b>Four</b>).</div>
 <div align="right">4 &times; 5 = 20 </div>
 
-(a) What will be the output for the following two C programs?
-```cpp
-i) int main ()                                                     ii) int main ()
-   {					                               {
-   struct one {				                               struct two {
-   int a: 8;				                               int a: 3;
-   int b: 9;				                               int b: 7;
-   int c: 6;				                               int c: 5;
-   int d: 1;				                               int d: 6;
-   } field1;			       	                               } field2 = { 2, 3, 4, 5 }
-   printf("%d", sizeof(field1));		                       printf("%d", sizeof(field2));
-   }					                               }
-```
+(a) Write a program which will print the Pascal's Triangle..
+
 **Answer:** <br>
-i) Sum of the bits assigned is, 8+9+6+1 = 24. 1 byte = 8 bits. So, the output will be: 3. <br>
-ii) Sum of the bits assigned is, 3+7+5+6 = 21, It is greater than 2 bytes, so it automatically takes 3 bytes. So, the output will be: 3.
-
-(b) If `int a = 63`, make it `a = 39` using only two operations and bit-masking.
->Hint: Remove all the bits except the last 3 bits then set the 5th bit.
-
-**Answer:**
-```cpp
-#include<stdio.h>
-int main()
-{
-    int a = 63;
-    a = (a & ( (1 << 3) - 1));
-    a |= (1 << 5);
-    printf ("%d", a);
-    return 0;
-}
-```
-
-( c) Write a function to find the sum of first n **(n<=20)** terms of Fibonacci series using recursion.
-
-**Answer:**
-```cpp
-int fib_sum (int n)
-{
-    if (n <= 1)
-        return n;
-    return fib_sum (n - 1) + fib_sum (n - 2) + 1;
-}
-```
-
-(d) Write a program to calculate the number of trailing zeroes in **n!** **(1 <= n <= 10<sup>9</sup>)**.
-
-**Answer:**
 ```cpp
 #include <stdio.h>
-#include <math.h>
-
-int main()
-{
-    int n, k = 1, ans = 0;
-    scanf ("%d", &n);
-    while (pow (5, k) <= n) ans += n / pow (5, k), k++;
-    printf ("%d", ans);
-    return 0;
+int main() {
+   int row, co = 1, sp, i, j;
+   printf("Enter the number of rows: ");
+   scanf("%d", &row);
+   for (i = 0; i < row; i++) {
+      for (sp = 1; sp <= row - i; sp++)
+         printf("  ");
+      for (j = 0; j <= i; j++) {
+         if (j == 0 || i == 0)
+            co = 1;
+         else
+            co = co * (i - j + 1) / j;
+         printf("%4d", co);
+      }
+      printf("\n");
+   }
+   return 0;
 }
 ```
 
-(e) Sort an array using Merge Sort algorithm in ascending order.
+
+( b)write a basic algorithm for searching a BST.
+
+
+**Answer:**
+
+  1. if the tree is empty, then the target is not in the tree, end search
+  2. if the tree is not empty, the target is in the tree
+  3. check if the target is in the root item
+  4. if a target is not in the root item, check if a target is smaller than the root’s value
+  5. if a target is smaller than the root’s value, search the left subtree
+  6. else, search the right subtree
+
+(c) When is a switch statement can be better than an if statement?
+
+**Answer:**
+If you have more than one condition to check on single variable or a single expression, then switch is better than if. In switch statement, program’s execution jumps to the matching value if found. If you use if condition, it checks one by one condition. So it is highly recommended to use switch, if you have to check a variable/condition/expression with multiple values.<br>
+
+
+```cpp
+if( err == 0)
+	printf("Error code is 0: reading failed error.\n");
+if( err == 1)
+	printf ("Error code is 1: writing failed error.\n");
+if( err == 2)
+	printf("Error code is 2: opening failed error.\n");
+if( err == 3)
+	printf("Error code is 3: write protected.\n");
+```
+<br>
+
+Here, errorCode variable is checking with values 0,1,2 and 3. In such case you can use switch
+
+```cpp
+switch(err)
+{
+	case 0:
+		printf("Error code is 0: reading failed error.\n");
+		break;
+
+	case 1:
+		printf ("Error code is 1: writing failed error.\n");
+		break;
+
+	case 2:
+		printf("Error code is 2: opening failed error.\n");
+		break;
+
+	case 3:
+		printf("Error code is 3: write protected.\n");
+		break;
+
+	default:
+		printf("Undefined error.\n");
+}
+
+```
+
+(d) Describe malloc, calloc, realloc and free functions with examples.
+**Answer:**
+<br>
+
+```
+malloc function takes a size as a parameter and allocates that memory
+to a pointer.
+Example: int *p = (int*)malloc(10*sizeof(int));
+
+calloc function takes number of total elements and size of
+one element and alocates the needed memory to a pointer. Initialy
+all the elements are assigned with the value zero.
+Example: int *p = (int*)calloc(10,sizeof(int));
+
+realloc function takes a pointer and a size and re allocates memory
+to that pointer and returns that memory to a pointer.
+The extra memory is assigned with garbage value.
+Example: int *v = (int*)realloc(u,10*sizeof(int));
+
+free function frees the memory allocated to a pointer;
+Example: free(p);
+```
+
+(e) What do you mean by `pass by value` and `pass by reference?
+
+**Answer:** 
+<br>
+
+```cpp
+int sum1(int a,int b)
+{
+    int sum;
+    sum = a+b;
+    return sum;
+}
+int sum2(int *a,int *b)
+{
+    int sum;
+    sum = *a+*b;
+    return sum;
+} 
+
+```  
+In the `sum1` function, the arguments of function are taken as value and called_ `pass by value`. In this declaration the function copies the argument values to its varaible and processes on it. In the_ `sum2` function, the argument of function are taken as pointers of memory addresses and it is called_ `pass by reference`. In this type of declaration, the function takes the memory address as argument and then accesses the value inside the address.
+
+
+(f) What is the output of the following code?
+<br>
+
+```cpp
+ #include <stdio.h>
+        #include <stdlib.h>
+
+        int main() {
+            char ***b;
+            char a[] = "asdixziojghebbxkqorhytgilokcuf";
+            int ab = 69;
+            char name[] = "abbas";
+            for (int i = 0; i < 25; i++) {
+                a[i] = name[i % 5];
+            }
+            for (int i = 29; i > -1; i--) {
+                printf("%c", a[i]);
+            }
+            puts("");
+            return 0;
+        }
+
+```
+
+**Answer:**<br>
+
+```
+suckosabbasabbasabbasabbasabba
+```
+
+
+<div align="left">3. Answer the following Questions. (Any <b>Two</b>).</div>
+<div align="right">2 &times; 10 = 20 </div>
+
+
+(a) Sort an array using Merge Sort algorithm in ascending order.
 
 **Answer:**
 ```cpp
@@ -615,189 +706,145 @@ int main()
 }
 ```
 
-(f) Look at the code given below. Is there any mistake which will cause compilation error? If yes, then correct it and print the output.
-```cpp
-#include <string.h>
-#define sust 20 * 5 + 100
+(b) Correct the following code and give appropriate output
 
-int main()
-{
-    int n = (sust * 4) / 2, m = sust--;
-    printf ("%d", n-- * m);
-    return 0;
-}
-```
-**Answer:** The code has no header file included for standard output. Again, **m = sust--** will produce error. It needs to be written like **m = sust - 1**. The corrected code:
 ```cpp
 #include <stdio.h>
-#define sust 20 * 5 + 100
+        #include <stdlib.h>
 
-int main()
-{
-    int n = (sust * 4) / 2, m = sust - 1;
-    printf ("%d", n-- * m);
-    return 0;
-}
-```
-*Output:* `49750`
+        int main() {
+            int ****a;
 
-<div align="left">3. Answer the following Questions. (Any <b>Two</b>).</div>
-<div align="right">2 &times; 10 = 20 </div>
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 5; j++)
+                    if (i < 5) {
+                        for (int k = 9; k > -1; k--)
+                            if (i * k % 2 == 0) {
+                                a[i][j][k][0]++;
+                            } else {
+                                a[i][j][k][1]++;
+                            }
+                    } else {
+                        for (int k = 20; k > 5; k--)
+                            if (j * k % 2 == 0) {
+                                a[i][j][k][0]++;
+                            } else {
+                                a[i][j][k][1]++;
+                            }
+                    }
 
-
-(a) 	Write a program to solve the equation ( √(x-3) - ∛{ (3x + 2)/2 } )<sup>7</sup> = (x - √{ (x<sup>2</sup>-1984)/5 } )<sup>3</sup> using binary search.          
-
-**Answer:**
-```cpp
-#include <stdio.h>
-#include <math.h>
-
-double croot (double n, double dis)
-{
-    double l = 0, h = n, m;
-    while (h - l > dis)
-    {
-        m = (l + h) / 2;
-        if (m * m * m <= n) l = m;
-        else h = m;
-    }
-    return (l + h) / 2;
-}
-
-int main()
-{
-    int m = 0;;
-    double l = 45, h = 1e18, dis = .00000001, mid;
-    while (h - l > dis)
-    {
-        mid = (h + l) / 2;
-        if (pow (sqrt (mid - 3) - croot ( (1.5 * mid + 1), dis), 7.0) <= pow (mid - sqrt ( (mid * mid - 1984) / 5), 3)) l = mid;
-        else h = mid;
-    }
-    m = (l + h) / 2;
-    printf ("%d\n", m);
-    return 0;
-}
-```
-
-(b) Write a program to print the shortest path between two nodes of a weighed undirected graph (answering queries).
->Your path should look like this: **3->5->2->9** (just an example).
-
-**Answer:**
-```cpp
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#define ll long long
-#define sz 100
-#define inf 999999999999999
-
-ll adj[sz][sz], Next_Node[sz][sz];
-
-ll min (ll x, ll y)
-{
-    ll a = x < y ? x : y;
-    return a;
-}
-
-int main()
-{
-    ll i, n, m, x, y, z, j, k, q, a, b;
-    scanf ("%lld %lld %lld", &n, &m, &q);
-    for (i = 0; i < n; i++)
-        for (j = 0; j < n; j++)
-        {
-            if (i == j)
-            {
-                adj[i][j] = 0;
-                Next_Node[i][j] = 0;
-            }
-            else
-            {
-                adj[i][j] = inf;
-                Next_Node[i][j] = j;
-            }
+            printf("%d ", a[0][1][10][0]);
+            return 0;
         }
-    for (i = 0; i < m; i++)
-    {
-        scanf ("%lld %lld %lld", &x, &y, &z);
-        adj[x][y] = z;
-        adj[y][x] = z;
-    }
-    for (i = 0; i < n; i++)
-        for (j = 0; j < n; j++)
-            for (k = 0; k < n; k++)
-            {
-                if (adj[j][k] > (adj[j][i] + adj[i][k]))
-                {
-                    adj[j][k] = adj[j][i] + adj[i][k];
-                    Next_Node[j][k] = Next_Node[j][i];
+
+```
+
+
+**Answer:**
+```cpp
+ #include <stdio.h>
+        #include <stdlib.h>
+
+        int main() {
+            int ****a = malloc(sizeof(int ***) * 10);
+            for (int i = 0; i < 10; i++) {
+                a[i] = malloc(sizeof(int **) * 5);
+                for (int j = 0; j < 5; j++) {
+                    a[i][j] = malloc(sizeof(int *) * 21);
+
+                    for (int k = 0; k < 21; k++) {
+                        a[i][j][k] = malloc(sizeof(int) * 2);
+                        a[i][j][k][0] = 0;
+                        a[i][j][k][1] = 0;
+                    }
                 }
             }
-    for (i = 0; i < q; i++)
-    {
-        scanf ("%lld %lld", &a, &b);
-        if (adj[a][b] == inf)
-            printf ("No Path\n");
-        else if (adj[a][b] == 0)
-            printf ("You Are Already in The Destination\n");
-        else
-        {
-            printf ("The Shortest Path is: %lld", a);
-            printf ("-->%lld", Next_Node[a][b]);
-            if (Next_Node[a][b] == b)
-                puts ("");
-            while (Next_Node[a][b] != b)
-            {
-                a = Next_Node[a][b];
-                if (Next_Node[a][b] == b)
-                {
-                    printf ("-->%lld\n", Next_Node[a][b]);
-                    break;
-                }
-                printf ("-->%lld", Next_Node[a][b]);
-            }
+
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 5; j++)
+                    if (i < 5) {
+                        for (int k = 9; k > -1; k--)
+                            if (i * k % 2 == 0) {
+                                a[i][j][k][0]++;
+                            } else {
+                                a[i][j][k][1]++;
+                            }
+                    } else {
+                        for (int k = 20; k > 5; k--)
+                            if (j * k % 2 == 0) {
+                                a[i][j][k][0]++;
+                            } else {
+                                a[i][j][k][1]++;
+                            }
+                    }
+
+            printf("%d ", a[0][1][10][0]);
+            return 0;
         }
-    }
-    return 0;
-}
+
 ```
 
-( c) You are given an English word of lowercase letters with at least one vowel present in it. Write a complete program to output the word in Pig Latin. To construct a Pig Latin word, the first vowel occurring in the input word is placed at the start of the new word along with the remaining alphabets of it. The alphabets present before the first vowel are shifted at the end of the new word followed by “ay”. <br>
-**Example:** <br>
-```
-Input: s = "paris"
-Output: arispay
-```
-```
-Input: s = "amazon"
-Output: amazonay
-```
+( c) Implement a queue using pointer (Linked List). Write a function <b>Insert</b> to take integer elements and store them in decending order. Also write a print function to print the whole list. Example, take 5, 100, 25, 22, 13 as input using function and print 100 25 22 13 5. <br> 
 **Answer:**
 ```cpp
-
 #include <stdio.h>
-#include <string.h>
-#define isvowel(v) (v=='a' || v=='e' || v=='i' || v=='o' || v=='u')
+#include <stdlib.h>
 
-int main()
+struct node
 {
-    char word[80];
-    int len, i, pos;
-    scanf ("%s", word);
-    len = strlen (word);
-    for (i = 0; ; i++)
-        if (isvowel (word[i]))
-        {
-            pos = i;
-            break;
-        }
-    while (i < len) printf ("%c", word[i]), i++;
-    for (i = 0; i < pos; i++)
-        printf ("%c", word[i]);
-    printf ("ay");
-    return (0);
+	int data;
+	struct node* link;
+};
+
+struct node* head;
+
+void print () {
+	struct node* temp = head;
+
+	while (temp != NULL) {
+		printf ("%d ", temp -> data);
+		temp = temp -> link;
+	}
 }
+
+
+void Insert (int value) {
+	struct node* temp1 = (struct node*) malloc (sizeof (struct node));
+
+	temp1 -> data = value;
+
+	if (head == NULL || value >= head -> data) {
+		temp1 -> link = head;
+		head = temp1;
+	}
+	
+	else {
+		struct node* pred;
+		struct node* p;
+
+		p = head;
+
+		while (p != NULL && p -> data > value) {
+			pred = p;
+			p = p -> link;
+		}
+
+		pred -> link = temp1;
+		temp1 -> link = p;
+	}
+}
+
+int main () {
+	head = NULL;
+		Insert (5);
+	Insert (100);
+	Insert (25);
+	Insert (22);
+	Insert (13);
+
+	print ();
+}
+
 ```
 
 ---
